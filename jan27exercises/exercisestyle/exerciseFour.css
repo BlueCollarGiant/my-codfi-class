@@ -1,0 +1,34 @@
+.image-container {
+    background-color: blanchedalmond;
+    box-sizing: border-box;
+    border: 2px solid black;
+    width: 450px;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.imageOne {
+    background-color: aquamarine;
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: cover;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.imageTwo {
+    background-color: aquamarine;
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: cover;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* got lost in css for a bit lol */

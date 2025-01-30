@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exerciseFour</title>
+    <link rel="stylesheet" href="exercisestyle/exerciseFour.css">
+    <script src="exercisescript/exerciseFour.js" defer></script>
+    <link rel="preload" href="exercisestyle/cssassets/shifaaz-shamoon-okVXy9tG3KY-unsplash.jpg" as="image">  <!-- this is how you preload an image  in html so your stuff dosnt lag i also did it in js-->
+    <link rel="preload" href="exercisestyle/cssassets/michael-krahn-eGD69I3ODC4-unsplash.jpg" as="image">   <!--preload image-->
+    <link rel="preload" href="exercisestyle/cssassets/mark-tegethoff-NMLv5HQZnK4-unsplash.jpg" as="image">  <!--preload image-->
+    <link rel="preload" href="exercisestyle/cssassets/another-image.jpg" as="image">    <!--preload image-->
+</head>
+<body>
+    <h1>This is my website</h1>
+    <p id="target-text">This will be changed</p>
+    <button onclick="changeText()">text changer</button>
+    <!--set up a div container not needed for exercise but helps me learn -->
+    <div class="image-container">
+        <img class="imageOne" id="image-target-one" src="exercisestyle/cssassets/shifaaz-shamoon-okVXy9tG3KY-unsplash.jpg" alt="">
+        <img class="imageTwo" id="image-target-two" src="exercisestyle/cssassets/mark-tegethoff-NMLv5HQZnK4-unsplash.jpg" alt="">
+    </div>
+    
+    <button class="image-buttons"  onclick="changeImageOne()">click me 1</button>
+    <button class="image-buttons"  onclick="changeImageTwo()">click me 2</button>
+</body>
+</html>
