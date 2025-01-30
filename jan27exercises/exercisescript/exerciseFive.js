@@ -80,3 +80,45 @@ function transferData() {
 
     
 }
+// im not counting exercise 5 complete even with it working see thought below
+let timer;
+let timeLeft = 10;
+let isRunning = false; // check if the timer is running
+
+
+function startstop() {
+    const timerDisplay = document.getElementById("timer-display");
+    const timerButton = document.getElementById("timer-button");
+
+    if(isRunning) {
+        clearInterval(timer);
+        timerButton.textContent = "start"; //change button text to start
+        isRunning = false;
+    } else {
+        timerButton.textContent = "stop"; // change button text to stop
+        isRunning = true;
+
+        timer = setInterval(() => {
+            if (timeLeft > 0) {
+                timeLeft--; //decrease the time left
+                timerDisplay.textContent = `00:${timeLeft.toString().padStart(2,'0')}`;
+            } else {
+                clearInterval(timer);
+                timerButton.textContent = "start" //reset button text
+                alert("Times up!"); // simple alert
+                timeLeft = 10 // reset timer
+                timerDisplay.textContent = "00:10" // reset display
+
+            }
+        }, 1000);
+    }
+}
+
+// program runs and is successful but i refuse to claim complete 
+// reason being i hit the wall on this exercise and had to resort to ai to finish planning it out
+// im not in this to waste my time so instead im going to keep the finished project
+// and im going to disect it for learning instead 
+// current thoughts frustrated i hit a wall but im glad ive reached a point i can see where i need improvement.
+// lots of new information for me to absorb in this exercise ive never worked with time before
+// theres a few js methods ive never heard of i may start reading the documentation i kinda feel i should have know these.
+// if anyone reads this exercise good god why are you here? either way hope you get a laugh or learn something.
