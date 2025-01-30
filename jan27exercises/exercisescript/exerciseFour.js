@@ -44,6 +44,7 @@ function changeImageOne() {
     }
 }
 
+
 function changeImageTwo() {
     const imagechanger = document.getElementById("image-target-two");
 
@@ -54,4 +55,28 @@ function changeImageTwo() {
         imagechanger.src = image4.src; // link to image4 for preload
         isChanged = true;
     }
+}
+
+const userinput = document.getElementById("form-input")
+const useroutput = document.getElementById("form-output");
+
+// this clears the input field when someone clicks the input again to type
+userinput.addEventListener("focus", () => {
+    userinput.value = ""; // clear the form text field on click
+    useroutput.innerText = ""; // this is to clear the display output
+    isChanged = false; // this is here to keep make sure the clear happened
+})
+
+function transferData() {
+    event.preventDefault(); // says depreciated but still works. this stops the form from reseting when submit is clicked
+
+    if (isChanged) {
+        useroutput.innerText = "";
+        isChanged = false;
+    } else {
+        useroutput.innerText = userinput.value; // .value for displaying the users text they entered
+        isChanged = true;
+    }
+
+    
 }
