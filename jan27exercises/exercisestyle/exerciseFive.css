@@ -1,0 +1,51 @@
+.image-container {
+    background-color: blanchedalmond;
+    box-sizing: border-box;
+    border: 5px solid #ccc;
+    width: 450px;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imageOne {
+    background-color: aquamarine;
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: cover;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.imageTwo {
+    background-color: aquamarine;
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: cover;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* got lost in css for a bit lol */
+
+.form-container {
+    background-image: linear-gradient(to right, rgb(0, 255, 98), rgb(0, 170, 255));
+    border: 5px solid #ccc;
+    border-radius: 3px;
+    padding: 20px;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.form-area {
+    border-radius: 2px;
+}
+
+.form-button{
+    border-radius: 2px;
+    cursor: pointer;
+}
