@@ -11,14 +11,14 @@
 
 <body>
     <p class="title">Rock Paper Scissors</p>
-    <button onclick="playGame('Rock')" class="move-button">
+    <button  class="move-button js-rock-button">
 
         <img src="feb03vidcss/feb03images/rock-emoji.png" alt="image of hand making rock sign" class="move-icon"></button>
 
-    <button onclick="playGame('Paper')" class="move-button">
+    <button  class="move-button js-paper-button">
 
         <img src="feb03vidcss/feb03images/paper-emoji.png" alt="image of hand making paper sign" class="move-icon"></button>
-    <button onclick="playGame('Scissors');" class="move-button">
+    <button  class="move-button js-scissors-button">
 
         <img src="feb03vidcss/feb03images/scissors-emoji.png" alt="image of hand making scissors sign" class="move-icon"></button>
 
@@ -42,8 +42,24 @@
         autoPlay();
     ">Auto play</button>
 
+    <button onclick="" class="js-button">click</button>
+    <script>/*
+        const buttonElement = document.querySelector(".js-button");
 
-    <script>
+        const eventListener = ()=> {
+            console.log("click")}
+
+        buttonElement.addEventListener("click", eventListener);
+
+        buttonElement.removeEventListener("click", eventListener);
+
+        buttonElement.addEventListener("click",()=> {
+            console.log("click2")
+        });
+
+
+
+        /*
         [
             'make dinner',
             'wash dishes',
@@ -79,6 +95,19 @@
     const oneLine = () => 2 + 3;
 
     console.log(oneLine());
+
+
+    const object2 = {
+        method: () => {
+
+        },
+        method() {
+
+        }
+    };*/
+
+        
+        
     </script>
 </body>
 
