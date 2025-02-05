@@ -37,6 +37,49 @@
     localStorage.removeItem('score');
     updateScoreElement();
     " class="reset-score-button">Reset</button>
+
+    <button class="auto-play-button" onclick="
+        autoPlay();
+    ">Auto play</button>
+
+
+    <script>
+        [
+            'make dinner',
+            'wash dishes',
+            'watch youtube'
+        ].forEach((value, index) => {
+            if (value === 'wash dishes') {
+                return;
+            }
+            console.log(index);
+            console.log(value);
+        });
+    
+    const regularFunction = function(param, param2) {
+        console.log("hello")
+        return 5;
+    }    
+
+
+    const arrowFunction = (param, param2) => {
+        console.log('hello')
+        return 5;
+    }
+    arrowFunction(); 
+
+
+
+    const oneParam = param => {
+        console.log(param + 1);
+    }
+
+    oneParam(5);
+
+    const oneLine = () => 2 + 3;
+
+    console.log(oneLine());
+    </script>
 </body>
 
 </html>
