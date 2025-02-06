@@ -55,7 +55,6 @@ function addUser(name) {
 
 function greetUser(){
     if (user.length > 0 ){
-        //console.log(`welcome:`);
         for (let i =0; i <user.length; i++) {
             console.log(`welcome ${user[i]}!`);
         } 
