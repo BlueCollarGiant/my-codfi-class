@@ -42,10 +42,12 @@ console.log([1,2,3,4,5,6,7,8,9,10].filter((value, index) => {
 
 function timed() {
     console.log("Task completed")
-    clearInterval(waiting);
+    clearInterval(waiting);// clear interval stops the setinterval
 }
 
-const waiting = setInterval(() => {
+const waiting = setInterval(() => { // had to put set interval in a variable to use clear interval correctly
     console.log("still waiting...")
 }, 2000);
 setTimeout(timed,5000)
+
+// exersice five complete
